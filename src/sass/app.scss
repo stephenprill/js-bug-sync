@@ -1,4 +1,22 @@
 body {
   background: #222;
   color: #93DE7F;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+input {
+  border: none;
+  background: white;
+  padding: 10px;
+}
+
+button {
+  border: none;
+  background: teal;
+  padding: 10px;
 }
