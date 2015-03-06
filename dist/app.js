@@ -45,12 +45,13 @@ var removeSync = function (inputs) {
  *
  * @param inputs   An object with each input DOM node.
  */
-var saveSync = function (inputs) {
+var saveSync = function (inputs, id) {
   var left = inputs.a,
       right = inputs.b;
 
-  document.getElementById("savedInputs").innerHTML += "" + left + " synced with " + right;
+  document.getElementById(id).innerHTML += "" + left + " synced with " + right;
 };
+"use strict";
 
 // Grab the input fields to pass into the syncInput function.
 var inputA = document.getElementById("input"),
@@ -61,13 +62,13 @@ var inputA = document.getElementById("input"),
 // remove event listeners later on, read the input values, etc.
 var inputs = syncInput(inputA, inputB);
 
-// Grab the end buttons.
+// Grab the buttons and configure sync.
 var endButton = document.getElementById("end");
 var saveButton = document.getElementById("save");
 
-endButton.addEventListener("keyup", function () {
+endButton.addEventListener("click", function () {
   removeSync(inputs);
 });
 saveButton.addEventListener("click", function () {
-  saveSync(inputs);
+  saveSync(inputs, "savedInputs");
 });
