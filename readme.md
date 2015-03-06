@@ -3,6 +3,7 @@
 ## Bugs:
 1. The input fields should stop synchronizing input when a user clicks the 'Stop Sync' button. Instead, a user has to click it and type ON the button, as if it were an input field.
 2. Even when users use the above method to stop the syncing, it only seems to stop syncing the first input field. The second one is still synced with the first.
+3. When 'Save Sync' is pressed, it shows "[object Object] synced with [object Object]" instead of the values of each saved input.
 
 ### Tips
 * Read the code and note any methods you don't know or understand. Look them up.
