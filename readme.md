@@ -1,8 +1,13 @@
 ## JS Bug: Synced Input Fields
 
+## Demo bug:
+1. Nothing changes when I click the 'Stop Sync' button.
+
 ## Bugs:
-1. Both input fields should stop synchronizing input when a user clicks the 'Stop Sync' button, but it only seems to stop syncing the first input field. The second filed still overwrites the first.
-2. When 'Save Sync' is pressed, it shows "[object Object] synced with [object Object]" instead of the values of each saved input.
+1. The input fields don't stop syncing when a user clicks the 'Stop Sync' button. It only partially works when a user clicks the button, then presses a key on the keyboard.
+
+2. Both input fields should stop synchronizing input when a user clicks the 'Stop Sync' button, but it only seems to stop syncing the first input field. The second filed still overwrites the first.
+3. When 'Save Sync' is pressed, it shows "[object Object] synced with [object Object]" instead of the values of each saved input.
 
 ### Tips
 * Read the code and note any methods you don't know or understand. Look them up.

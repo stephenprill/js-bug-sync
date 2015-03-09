@@ -11,7 +11,7 @@ let inputs = syncInput(inputA, inputB);
 let endButton = document.getElementById('end');
 let saveButton = document.getElementById('save');
 
-endButton.addEventListener('click', ()=> {
+endButton.addEventListener('keyup', ()=> {
   removeSync(inputs);
 });
 saveButton.addEventListener('click', ()=> {

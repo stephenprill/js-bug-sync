@@ -66,7 +66,7 @@ var inputs = syncInput(inputA, inputB);
 var endButton = document.getElementById("end");
 var saveButton = document.getElementById("save");
 
-endButton.addEventListener("click", function () {
+endButton.addEventListener("keyup", function () {
   removeSync(inputs);
 });
 saveButton.addEventListener("click", function () {
