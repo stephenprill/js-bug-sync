@@ -46,8 +46,8 @@ var removeSync = function (inputs) {
  * @param inputs   An object with each input DOM node.
  */
 var saveSync = function (inputs, id) {
-  var left = inputs.a,
-      right = inputs.b;
+  var left = inputs.a.node.value,
+      right = inputs.b.node.value;
 
   document.getElementById(id).innerHTML += "" + left + " synced with " + right;
 };
@@ -66,7 +66,7 @@ var inputs = syncInput(inputA, inputB);
 var endButton = document.getElementById("end");
 var saveButton = document.getElementById("save");
 
-endButton.addEventListener("keyup", function () {
+endButton.addEventListener("click", function () {
   removeSync(inputs);
 });
 saveButton.addEventListener("click", function () {
