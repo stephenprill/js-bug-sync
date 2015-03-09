@@ -6,20 +6,20 @@
  * @return An object with properties that represent each input and their coresponding event handler.
  */
 const syncInput = (inputA, inputB) => {
-  let aToB = () => {
+  let syncHandle = () => {
     inputB.value = inputA.value;
   };
 
-  let bToA = () => {
+  let swapValues = () => {
     inputA.value = inputB.value;
   };
 
-  inputA.addEventListener('keyup', aToB);
-  inputB.addEventListener('keyup', bToA);
+  inputA.addEventListener('keyup', syncHandle);
+  inputB.addEventListener('keyup', swapValues);
 
   return {
-    a: { node: inputA, fn: aToB },
-    b: { node: inputB, fn: aToB }
+    a: { node: inputA, fn: syncHandle },
+    b: { node: inputB, fn: syncHandle }
   };
 };
 

@@ -14,6 +14,7 @@
 * Use `debugger` to step through different parts of the code.
 * Note naming patterns and any consistencies or inconsistencies
 * Read the code comments to understand the intention of functions.
+* There is one bug in the user code. All others are in the library.
 
 ## Style
 * Add custom CSS to `src/sass/`
