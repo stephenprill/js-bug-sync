@@ -49,3 +49,4 @@ Install the [Chrome extension](https://chrome.google.com/webstore/detail/liverel
 > So, good night unto you all.  
 > Give me your hands, if we be friends,  
 > And Robin shall restore amends.  
+# js-bug-sync
